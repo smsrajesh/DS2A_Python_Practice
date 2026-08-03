@@ -1,0 +1,33 @@
+Today's SQL Questions
+Question 1
+
+Second Highest Distinct Salary
+
+emp_id | salary
+1      | 1000
+2      | 2000
+3      | 3000
+4      | 3000
+5      | 2500
+
+Return the second highest distinct salary.
+
+Question 2
+
+Department-wise Highest Salary
+
+Tables:
+
+Employee
+
+emp_id
+name
+salary
+dept_id
+
+Department
+
+dept_id
+dept_name
+
+Return the employee(s) earning the highest salary in each department.

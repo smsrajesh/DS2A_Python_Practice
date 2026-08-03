@@ -1,0 +1,18 @@
+2. SQL Interview Questions (45 minutes)
+Question 1 – Employees Earning More Than Their Manager
+Employee
+emp_id	name	salary	manager_id
+
+Return employees whose salary is greater than their manager's salary.
+
+Question 2 – Highest Salary in Each Department
+Employee
+emp_id	name	salary	dept_id
+
+Return:
+
+Department Name
+Employee Name
+Highest Salary
+
+Use DENSE_RANK() instead of a subquery.
