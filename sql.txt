@@ -1,4 +1,5 @@
-Today's SQL Questions
+Day_1 : 31-07-2026 :Today's SQL Questions:  
+
 Question 1
 
 Second Highest Distinct Salary
@@ -31,3 +32,89 @@ dept_id
 dept_name
 
 Return the employee(s) earning the highest salary in each department.
+
+
+
+Day_2 : 01-08-2026 :Today's SQL Questions:  
+
+Question 1 – Duplicate Records
+
+Table: Employee
+
+emp_id	email
+...	...
+
+Task:
+Find all duplicate email addresses. Each duplicate email should appear only once in the output.
+
+Question 2 – Running Total
+
+Table: Sales
+
+sale_date	amount
+...	...
+
+Expected Output:
+
+sale_date	amount	running_total
+...	...	...
+
+Task:
+Use a window function to calculate the running total of amount ordered by sale_date.
+
+
+
+Day_3 : 02-08-2026 :Today's SQL Questions:  
+
+
+Question 1 – Third Highest Distinct Salary
+
+Hint:
+
+Think about handling duplicate salaries first.
+Then assign a rank to the remaining salaries.
+Question 2 – Consecutive Login Days
+
+Hint:
+
+Compare each login date with the previous or next login date for the same user.
+If you know the Gaps and Islands pattern, this is a good place to use it.
+
+
+
+Day_4 : 03-08-2026 :Today's SQL Questions:  
+
+
+
+Question 1 – Employees Earning More Than Their Manager
+
+Concepts to think about:
+
+This is a Self Join.
+The Employee table plays two roles:
+Employee
+Manager
+Join the table with itself using the employee's manager_id and the manager's emp_id.
+After joining, compare:
+Employee salary
+Manager salary
+Return only the employee details.
+
+Ask yourself:
+
+"How do I get the manager's salary when it is stored in the same table?"
+
+Question 2 – Highest Salary in Each Department
+
+Concepts to think about:
+
+Use the DENSE_RANK() window function.
+Partition the data by department.
+Order each partition by salary in descending order.
+Employees with the highest salary should receive rank 1.
+If multiple employees have the same highest salary, they should all appear.
+If you need the department name, think about whether another table (like Department) needs to be joined.
+
+Ask yourself:
+
+"Can I first assign ranks to employees within each department, then keep only rank = 1?"
