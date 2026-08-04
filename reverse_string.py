@@ -1,0 +1,5 @@
+st = input()
+print(st[::-1])
+st = list(st)
+st.reverse()
+print(''.join(st))
